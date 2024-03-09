@@ -112,10 +112,10 @@ export default function TableTashilat({ allData, url }: { allData: dataDashboard
                             </td>
                             <td scope="row" className="px-6 py-4 text-center font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 <div className="flex gap-2 justify-center">
-                                    <Button onClick={() => unConfirmed(i?.id)} variant="gradient" color="red" >
+                                    <Button placeholder onClick={() => unConfirmed(i?.id)} variant="gradient" color="red" >
                                         <IoClose className="inline text-gray-50" />
                                     </Button>
-                                    <Button onClick={() => confirm(i?.id)} variant="gradient" color="green" >
+                                    <Button placeholder onClick={() => confirm(i?.id)} variant="gradient" color="green" >
                                         <FaCheck className="inline text-gray-50" />
                                     </Button>
                                 </div>

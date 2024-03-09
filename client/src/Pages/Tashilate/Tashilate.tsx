@@ -113,7 +113,8 @@ export default function Tashilat() {
                                 }}
                                 value={changeSelect.tashilate}
                                 className="text-tag-head-light dark:text-tag-head-dark"
-                                onChange={(value: string) => setChangeSelect({ ...changeSelect, tashilate: value })}
+                                placeholder
+                                onChange={(value: any) => setChangeSelect({ ...changeSelect, tashilate: value })}
                             >
                                 <Option value="0">مالی مستقیم</Option>
                                 <Option value="1">مالی غیر مستقیم</Option>
@@ -130,7 +131,8 @@ export default function Tashilat() {
                                     unmount: { y: 25 }
                                 }}
                                 className="text-tag-head-light dark:text-tag-head-dark"
-                                onChange={(value: string) => setChangeSelect({ ...changeSelect, year: value })}
+                                placeholder
+                                onChange={(value: any) => setChangeSelect({ ...changeSelect, year: value })}
                                 value={changeSelect.year}
                             >
                                 <Option value="1389">1389</Option>
@@ -159,7 +161,8 @@ export default function Tashilat() {
                                 }}
                                 value={changeSelect.orderBy}
                                 className="text-tag-head-light dark:text-tag-head-dark"
-                                onChange={(value: string) => setChangeSelect({ ...changeSelect, orderBy: value })}
+                                placeholder
+                                onChange={(value: any) => setChangeSelect({ ...changeSelect, orderBy: value })}
                             >
                                 <Option value="newest">جدید ترین</Option>
                                 <Option value="oldest">قدیمی ترین</Option>

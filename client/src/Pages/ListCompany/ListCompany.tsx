@@ -120,7 +120,7 @@ export default function ListCompany() {
                       {i?.technologyField}
                     </td>
                     <td className="px-3 py-2 text-center">
-                      <Button variant='gradient' color='blue' className='font-medium py-3 px-5' onClick={() => getInfoCompany(i?.id)}>
+                      <Button placeholder variant='gradient' color='blue' className='font-medium py-3 px-5' onClick={() => getInfoCompany(i?.id)}>
                         <span>اطلاعات</span>
                         <i><FaExclamation className="inline text-gray-50" /></i>
                       </Button>
@@ -141,16 +141,16 @@ export default function ListCompany() {
           </div>
         )}
       </div>
-      <Dialog open={open} animate={{
+      <Dialog placeholder  open={open} animate={{
         mount: { scale: 1, y: 0 },
         unmount: { scale: 0.9, y: -100 },
       }} handler={setOpen} size={"xl"}>
-        <DialogBody className="h-[42rem] dialog-company overflow-y-auto bg-gray-700 rounded-md">
+        <DialogBody  placeholder className="h-[42rem] dialog-company overflow-y-auto bg-gray-700 rounded-md">
           {infoCompany && (
             <InfoCompany id={infoCompany} />
           )}
           <div className="text-left mt-4">
-            <Button variant="gradient" color="red" onClick={() => setOpen(false)}>
+            <Button placeholder  variant="gradient" color="red" onClick={() => setOpen(false)}>
               <span>بستن</span>
             </Button>
           </div>

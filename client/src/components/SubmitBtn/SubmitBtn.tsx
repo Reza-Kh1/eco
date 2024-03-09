@@ -14,7 +14,7 @@ type SubmitBtnType = {
 export default function SubmitBtn({ type, classBtn, value, icon, classPlus, onClick, url, iconRight }: SubmitBtnType) {
     const classButton = "bg-blue-400 text-gray-50 shadow-lg hover:bg-orange-400 transition-all px-3 py-2 text-sm text-center rounded-md"
     return (
-        <Button className={classBtn ? classBtn : classButton + " " + classPlus} type={type} onClick={onClick}>
+        <Button placeholder className={classBtn ? classBtn : classButton + " " + classPlus} type={type} onClick={onClick}>
             {url ? (
                 <NavLink to={url}>
                     {iconRight}

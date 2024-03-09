@@ -249,7 +249,8 @@ export default function Auth() {
                                                     </span>
                                                     <div dir="ltr">
                                                         <Select
-                                                            onChange={(value: string) => setRole(value)}
+                                                        placeholder
+                                                            onChange={(value: any) => setRole(value)}
                                                             label="انتخاب موقعیت"
                                                             animate={{
                                                                 mount: { y: 0 },

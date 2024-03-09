@@ -9,14 +9,14 @@ export default function FormRegister() {
   const selectForm = useSelector((state: FormRegisterType) => state.form)
   const SideBarForm = ({ url, value, status }: { url: string, value: string, status: string }) => {
     return (
-      <Button variant="text" className={'m-0 p-0 rounded-md font-medium text-right'}>
+      <Button placeholder variant="text" className={'m-0 p-0 rounded-md font-medium text-right'}>
         <NavLink to={url} className={`${status === "complete" ? "bg-green-200" : status === "pending" ? "bg-gray-200" : "bg-red-200"}  w-full block text-base rounded-md shadow-md shadow-brown-300 dark:shadow-brown-700  dark:text-black hover:bg-orange-400 transition-all py-2 px-4 text-md`} >{value}</NavLink>
       </Button>
     )
   }
   const NavBarForm = ({ url, index }: { url: string, index: number }) => {
     return (
-      <IconButton variant="text">
+      <IconButton placeholder variant="text">
         <NavLink to={url} className="shadow-brown-600 hover:bg-orange-400 transition-all dark:text-span-dark bg-gray-300 dark:bg-blue-gray-700 rounded-lg px-4 py-2 text-sm">{index}</NavLink>
       </IconButton>
     )

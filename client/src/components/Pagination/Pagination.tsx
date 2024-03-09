@@ -15,6 +15,7 @@ export function Pagination({ page, allPage }: PaginationType) {
     return (
         <div className="flex items-center gap-4 w-full justify-between">
             <Button
+            placeholder
                 variant="text"
                 className="flex items-center gap-2 rounded-full text-span-light dark:text-white"
                 onClick={() => navigate(pathname + `?take=${import.meta.env.VITE_PUBLIC_TAKE}&skip=` + (Number(page) - 1) + `${text ? '&text=' + text : ""}`)}
@@ -32,7 +33,7 @@ export function Pagination({ page, allPage }: PaginationType) {
                         (i) => {
                             return (
                                 <Link to={`${pathname}?skip=${i}&take=${import.meta.env.VITE_PUBLIC_TAKE}` + `${text ? '&text=' + text : ""}`} key={i}>
-                                    <IconButton
+                                    <IconButton placeholder
                                         size="md"
                                         variant={Number(page) === Number(i) ? "filled" : "outlined"}
                                         color={Number(page) === Number(i) ? "gray" : "black"}
@@ -51,6 +52,7 @@ export function Pagination({ page, allPage }: PaginationType) {
                 }
             </div>
             <Button
+            placeholder
                 variant="text"
                 className="flex items-center gap-2 rounded-full text-span-light dark:text-white"
                 disabled={Number(page) === allPage}

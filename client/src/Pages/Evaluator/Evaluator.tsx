@@ -78,7 +78,7 @@ export default function Evaluator() {
                                 </td>
                                 <td className="px-3 py-2 text-center">
                                     <Link to={"/admin/evaluator-check/" + i.id}>
-                                        <Button variant="gradient" color="green" >
+                                        <Button placeholder variant="gradient" color="green" >
                                             اطلاعات
                                             <FaExclamation className="inline text-gray-50" />
                                         </Button>

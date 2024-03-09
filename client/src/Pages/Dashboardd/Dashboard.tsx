@@ -51,7 +51,8 @@ export default function Dashboard() {
               className="text-span-light dark:text-span-dark"
               value={filterChart}
               defaultValue={filterChart || ""}
-              onChange={(value: string) => { setFilterChart(value), actionHandler(null, value) }}
+              placeholder
+              onChange={(value: any) => { setFilterChart(value), actionHandler(null, value) }}
             >
               <Option value="filters/totalsales">شاخص کل شرکت ها</Option>
               <Option value="sales/SalesForAllCompanyOnSpecificDate">فروش</Option>
@@ -67,7 +68,8 @@ export default function Dashboard() {
                 mount: { y: 0 },
                 unmount: { y: 25 }
               }}
-              onChange={(value: string) => { setFilterYear(value), actionHandler(value, null) }}
+              placeholder
+              onChange={(value: any) => { setFilterYear(value), actionHandler(value, null) }}
               value={filterYear}
               defaultValue={filterYear || ""}
               className="text-span-light dark:text-span-dark"

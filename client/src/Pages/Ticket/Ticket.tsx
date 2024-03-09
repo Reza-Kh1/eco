@@ -51,7 +51,8 @@ console.log(support);
             <div className="w-1/2 pr-2">
               <span className="text-sm text-span-light dark:text-span-dark">گیرنده پیام را انتخاب کنید</span>
               <div dir="ltr" className="mt-1">
-                <Select className="text-span-light dark:text-span-dark" onChange={(value: string) => setSupport(value)} label="انتخاب کنید">
+                <Select className="text-span-light dark:text-span-dark" placeholder
+                onChange={(value: any) => setSupport(value)} label="انتخاب کنید">
                   <Option value="مدیر سایت">مدیر سایت</Option>
                   <Option value="پشتیبانی">پشتیبانی</Option>
                   <Option value="بازرس اطلاعات">بازرس اطلاعات</Option>
@@ -62,7 +63,7 @@ console.log(support);
               <textarea className="w-full rounded-md p-2 dark:bg-gray-700 dark:text-span-dark shadow-md focus-visible:outline-none" {...register("text")} required rows={6}></textarea>
             </div>
             <div className="w-1/6 mt-3">
-              <Button className="w-full" variant="gradient" color="green">
+              <Button className="w-full" variant="gradient" color="green" placeholder>
                 ثبت
               </Button>
             </div>
@@ -76,6 +77,7 @@ console.log(support);
             allData?.length ? (
               allData?.map((i) => (
                 <Accordion
+                placeholder
                   className="bg-custom-dark my-3 dark:bg-custom-light p-2 rounded-md"
                   key={i.id}
                   open={open === i.id}
@@ -87,6 +89,7 @@ console.log(support);
                   }
                 >
                   <AccordionHeader
+                  placeholder
                     className="text-h1-light dark:text-h1-dark text-lg"
                     onClick={() => handleOpen(i.id)}
                   >

@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 1330
 
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend domain
+    origin: 'http://ecobef.com', // Replace with your frontend domain
     credentials: true // Allow credentials
   }))
 

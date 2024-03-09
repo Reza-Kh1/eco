@@ -157,13 +157,13 @@ export default function Export() {
                     {i?.date ? (
                       <>
                         {i.date === editId ? (
-                          <Button variant="gradient" className="px-5 font-medium ml-2 py-2" color="deep-orange" onClick={() => editHandler(i.date, i.id)}>ذخیره<FaCheck className="inline-block mr-2" /></Button>
+                          <Button placeholder variant="gradient" className="px-5 font-medium ml-2 py-2" color="deep-orange" onClick={() => editHandler(i.date, i.id)}>ذخیره<FaCheck className="inline-block mr-2" /></Button>
                         ) : (
-                          <Button variant="gradient" className="px-5 font-medium ml-2 py-2" color="blue" onClick={() => setEditId(i.date)}>ویرایش<FaPen className="inline-block mr-2" /></Button>
+                          <Button placeholder variant="gradient" className="px-5 font-medium ml-2 py-2" color="blue" onClick={() => setEditId(i.date)}>ویرایش<FaPen className="inline-block mr-2" /></Button>
                         )}
                       </>
                     ) : (
-                      <Button variant="gradient" className="px-5 font-medium ml-2 py-2" color="blue-gray" onClick={() => createhandler(i)}>ثبت<FaExclamation className="inline-block mr-2" /></Button>
+                      <Button placeholder variant="gradient" className="px-5 font-medium ml-2 py-2" color="blue-gray" onClick={() => createhandler(i)}>ثبت<FaExclamation className="inline-block mr-2" /></Button>
                     )}
                   </td>
                   <td scope="col" className="px-1 py-2 text-center">

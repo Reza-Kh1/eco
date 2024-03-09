@@ -127,10 +127,10 @@ export default function EvaluatorCheck() {
               <InfoCompany name="حوزه محصولات :" value={information?.product} />
               <InfoCompany name="سال تاسیس :" value={information?.date} />
               <div className="flex gap-2 justify-center items-center">
-                <Button variant="gradient" color="red" onClick={() => accessInfo(false)}>
+                <Button placeholder variant="gradient" color="red" onClick={() => accessInfo(false)}>
                   <IoClose className="inline text-gray-50" />
                 </Button>
-                <Button variant="gradient" color="green" onClick={() => accessInfo(true)} >
+                <Button placeholder variant="gradient" color="green" onClick={() => accessInfo(true)} >
                   <FaCheck className="inline text-gray-50" />
                 </Button>
               </div>
@@ -182,12 +182,12 @@ export default function EvaluatorCheck() {
       </div>
       <div className="w-full mt-3 flex justify-between">
         <div className="w-1/6">
-          <Button variant="gradient" color="deep-orange" onClick={() => { navigate(-1), toast.success("ارزیابی ذخیره شد") }} className="w-full">
+          <Button placeholder variant="gradient" color="deep-orange" onClick={() => { navigate(-1), toast.success("ارزیابی ذخیره شد") }} className="w-full">
             <span>ذخیره و بازگشت</span>
           </Button>
         </div>
         <div className="w-1/6">
-          <Button variant="gradient" color="indigo" onClick={accessForm} className="w-full">
+          <Button placeholder variant="gradient" color="indigo" onClick={accessForm} className="w-full">
             <span>تایید کردن اطلاعات</span>
             <GiAtom className="inline mr-2 text-lg" />
           </Button>

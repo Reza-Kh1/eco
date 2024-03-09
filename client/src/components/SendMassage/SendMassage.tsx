@@ -31,13 +31,13 @@ export default function SendMassage({ classNmae, value, id, name }: SendMassageT
     return (
         <>
             <div className="w-full">
-                <Button variant="gradient" className={classNmae} onClick={() => setOpen(true)} disabled={disabled} color="teal">
+                <Button  placeholder variant="gradient" className={classNmae} onClick={() => setOpen(true)} disabled={disabled} color="teal">
                     <span>ارسال پیام </span>
                     <span>{value}</span>
                 </Button>
             </div>
             <Dialog open={open} handler={setOpen} className="dark:bg-gray-700" size={"lg"} placeholder="">
-                <DialogBody>
+                <DialogBody placeholder >
                     <span className="dark:text-span-dark">شما مجاز هستید که برای هر بخش فقط یه پیام ارسال بکنید</span>
                     <textarea placeholder="متن راهنمایی خود را اینجا وارد نمایید" value={massage} onChange={({ target }) => setMassage(target.value)} rows={8}
                         className='w-full mt-5 rounded-md focus-visible:outline-none bg-gray-100 shadow-md p-2 dark:bg-span-light dark:text-span-dark' >
@@ -45,10 +45,10 @@ export default function SendMassage({ classNmae, value, id, name }: SendMassageT
                 </DialogBody>
                 <DialogFooter placeholder={""}>
                     <div className='flex justify-between w-full'>
-                        <Button variant="gradient" color="green" onClick={sendMassage}>
+                        <Button placeholder  variant="gradient" color="green" onClick={sendMassage}>
                             <span>ارسال</span>
                         </Button>
-                        <Button
+                        <Button placeholder
                             variant="gradient"
                             color="red"
                             className="mr-1"
