@@ -26,11 +26,11 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "http://ecobef.com",
+      "https://ecobef.com",
       "http://194.62.43.197",
-      "http://www.ecobef.com",
-    ], // Replace with your frontend domain
-    credentials: true, // Allow credentials
+      "https://www.ecobef.com",
+    ],
+    credentials: true,
   })
 );
 
