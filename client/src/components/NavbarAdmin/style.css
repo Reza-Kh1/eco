@@ -1,0 +1,21 @@
+.icon-bell {
+    position: relative;
+    cursor: pointer;
+}
+
+.info-alert {
+    color: #0b1117;
+    font-size: 12px;
+    width: auto;
+    padding: 1px 5px;
+    height: 17px;
+    position: absolute;
+    top: 0%;
+    right: -15%;
+    border-radius: 50%;
+    background-color: #afcbf6;
+}
+.dark .info-alert {
+    color: #e7e7e7;
+    background-color: #4e6282;
+}

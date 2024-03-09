@@ -1,0 +1,47 @@
+.dark .sidbar-admin a.active {
+    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+    padding-right: 15px;
+    box-shadow: 0px 2px 5px #020f25;
+}
+
+.sidbar-admin a.active {
+    background-color: rgb(255 255 255);
+    padding-right: 15px;
+    color: #252525;
+    box-shadow: 0px 2px 5px #406ab2;
+}
+
+.sidbar-admin ul li i svg {
+    display: inline;
+}
+
+.sidbar-admin.hidden-sidebar span,
+.sidbar-admin.hidden-sidebar h3 {
+    display: none;
+}
+
+.sidbar-admin.hidden-sidebar {
+    width: auto !important;
+}
+
+.sidbar-admin.hidden-sidebar a {
+    margin: 2px 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.sidbar-admin.hidden-sidebar a i {
+    margin-left: 0 !important;
+}
+
+.sidbar-admin.hidden-sidebar a:hover {
+    padding-right: 0 !important;
+}
+
+.sidbar-admin.hidden-sidebar a.active:hover {
+    padding-right: 13px !important;
+}
+
+.sidbar-admin.hidden-sidebar .active {
+    padding: 7px 13px !important;
+}

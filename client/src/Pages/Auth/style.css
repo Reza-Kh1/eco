@@ -1,0 +1,239 @@
+.signup-page {
+    position: relative;
+}
+
+.signup-page label {
+    color: #d6d6d6 !important;
+}
+
+.customize-shadow {
+    position: relative;
+    border-radius: 6px;
+    background-color: #000000b3;
+    box-shadow: 0px 1px 6px 1px #181313;
+}
+
+.customize-shadow::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(1px);
+    border-radius: 6px;
+}
+
+.signup-page::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/image/back.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.signup-page::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: black;
+}
+
+.btn-signUp {
+    position: relative;
+}
+
+.btn-signUp::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #e5811e;
+    top: 103%;
+    left: 0%;
+    transform: translate(0, 17%);
+}
+
+.btn-signUp::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    background-color: #e5811e;
+    top: 117%;
+    left: 25%;
+    transform: translate(0, 17%);
+}
+
+
+/* ////////////////////////////// */
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.container {
+    position: relative;
+    width: 32rem;
+    margin: 30px auto 0;
+    height: 380px;
+    top: 50%;
+    margin-top: -160px;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 6px;
+    background-color: #000000b3;
+    box-shadow: 0px 1px 6px 1px #181313;
+}
+
+.container .box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .box:before,
+.container .box:after {
+    content: " ";
+    position: absolute;
+    right: 152px;
+    top: 50px;
+    background-color: #fc7f0165;
+    transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
+    width: 250px;
+    height: 285px;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+
+.container .box:after {
+    background-color: #41a0f94d;
+    top: -10px;
+    right: 80px;
+    width: 300px;
+    height: 180px;
+    border-radius: 80%;
+}
+
+.container .container-forms {
+    position: relative;
+}
+
+.container .container-forms .container-info {
+    text-align: right;
+    font-size: 0;
+}
+
+.container .container-forms .container-info .info-item {
+    text-align: center;
+    font-size: 16px;
+    width: 50%;
+    height: 320px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    opacity: 1;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: ease-in-out all 0.3s;
+}
+
+.container .container-forms .container-info .info-item .table-cell {
+    padding-left: 35px;
+}
+
+.container .container-forms .container-info .info-item:nth-child(2) .table-cell {
+    padding-right: 35px;
+    padding-left: 0;
+}
+
+.container .container-form {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 6px;
+    background-color: #000000b3;
+    box-shadow: 0px 1px 6px 1px #181313;
+    right: 0;
+    top: -30px;
+    width: 24rem;
+    height: 145%;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: ease-in-out all 0.5s;
+}
+
+.container .form-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.container .form-item.sign-up {
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+}
+
+.container.log-in .box:before {
+    position: absolute;
+    right: 180px;
+    top: 62px;
+    height: 265px;
+}
+
+.container.log-in .box:after {
+    top: 22px;
+    right: 192px;
+    width: 324px;
+    height: 220px;
+}
+
+.container.log-in .container-form {
+    right: 25%;
+    /* right: 260px; */
+}
+
+.container.log-in .container-form .form-item.sign-up {
+    right: 0;
+    opacity: 1;
+}
+
+.container.log-in .container-form .form-item.log-in {
+    right: -100%;
+    opacity: 0;
+}

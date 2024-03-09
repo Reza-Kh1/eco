@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "iranSans";
+  src: url("./fonts/Vazir-Regular.woff") format("woff");
+}
+
+@keyframes ldio-q5iz3826roe {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(360deg, #232323, #000000);
+  font-family: "iranSans", Arial, Helvetica, sans-serif !important;
+  box-sizing: border-box;
+}
+
+.font-sans {
+  font-family: "iranSans", Arial, Helvetica, sans-serif !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cut-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-register a.success {
+  background-color: #14BC0C;
+}
+
+.form-register a.error {
+  background-color: #f73e00;
+}
+
+.form-register a.pending {
+  background-color: #f5d93d;
+}
+
+.form-register a.active {
+  background-color: #3d9ff5;
+}
+
+/* این کد برای تمام مرورگرها کار نمی‌کند و فقط در مرورگرهایی که پشتیبانی می‌کنند، کار می‌کند */
+/* برای مرورگرهای Webkit مانند Chrome و Safari */
+.my-class::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 50%;
+}
+
+/* Track */
+.my-class::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.my-class::-webkit-scrollbar-thumb {
+  background: rgb(0, 132, 255);
+}
+
+/* Handle on hover */
+.my-class::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dialog-company::-webkit-scrollbar-thumb {
+  background: rgb(238, 238, 238);
+}
+
+.dialog-company::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+}
+
+.dialog-company::-webkit-scrollbar-track {
+  background: #3f3f3f;
+}
+
+.table-rounded thead tr:last-child th:first-child {
+  border-radius: 0 10px 0 0;
+}
+
+.table-rounded thead tr:last-child th:last-child {
+  border-radius: 10px 0 0 0;
+}
+
+.table-rounded tbody tr:last-child td:first-child {
+  border-radius: 0 0 10px 0;
+}
+
+.table-rounded tbody tr:last-child td:last-child {
+  border-radius: 0 0 0px 10px;
+}
+
+.table-rounded tbody tr:last-child {
+  border: none;
+}
+
+.input-identity:focus-visible {
+  outline: 1px solid #fa8a46;
+  box-shadow: 0px 0px 5px 1px #f27a3e;
+}
+
+.input-customize:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.tooltip-title {
+  display: flex;
+  direction: "rtl";
+  flex-direction: column;
+  padding: 0;
+}
+
+.tooltip-normalchart {
+  font-size: 12px;
+  padding: 0;
+  direction: rtl;
+  font-family: iransans, Arial, Helvetica, sans-serif;
+}
+
+.tooltip-treechart {
+  padding: 7px 10px;
+  margin: 5px 0;
+  color: #000000;
+  font-family: iransans, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  width: 100%;
+}
