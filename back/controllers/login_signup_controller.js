@@ -53,6 +53,7 @@ const register = asyncHandler(async(req, res, next) => {
 
 const login = asyncHandler(async(req, res, next) => {
     const {phoneNumber, password} = req.body
+    console.log(req.body)
 
     if(!phoneNumber || !password){
         return next(errorHandler(400, "All fields are required"))
@@ -65,7 +66,7 @@ const login = asyncHandler(async(req, res, next) => {
             },
 
         });
-    
+        console.log(user)
         if (!user) {
             return next(errorHandler(400, "Wrong credentials!"))
         }
@@ -74,7 +75,7 @@ const login = asyncHandler(async(req, res, next) => {
             req.body.password,
             user.dataValues.password
         );
-    
+  
         if (!matched) {
             return next(errorHandler(400, "Wrong credentials!"));
         }

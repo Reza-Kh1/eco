@@ -21,6 +21,9 @@ const companyModel = sequelize.define('Company', {
     name: {
         type: Sequelize.STRING
     },
+    companyCode: {
+        type: Sequelize.STRING
+    },
     userId: {
         type: Sequelize.UUID,
         //allowNull: false
